@@ -1,13 +1,11 @@
-
 body{
     font-family: "Lote", sans-serif;
     font-weight: 400;
     color: $color-grey;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     line-height: 1.7;
     padding: 3rem;
 }
-
 .heading-primary{
     color: white;
     text-transform: uppercase;
@@ -35,5 +33,34 @@ body{
         animation-name: moveRight;
         animation-duration: 3s;
         animation-timing-function: ease;
+    }
+}
+.heading-secondary{
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .7s;
+
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+.header-tertiary{
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-size: 1.8rem;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
     }
 }

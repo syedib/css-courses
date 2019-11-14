@@ -6,6 +6,8 @@
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
+    "run:office": "npm run watch:sass",
+    "run:home" : "npm-run-all devserver watch:sass",
     "start": "npm run watch:sass"
   },
   "author": "syed",
