@@ -34,6 +34,69 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh; }
 
+.logo {
+  height: 3.25rem; }
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    width: 90%;
+    padding: .7rem 2rem;
+    background-color: var(--color-grey-ligh-2);
+    border-radius: 100px;
+    border: none;
+    height: 3rem;
+    margin-right: -3.25rem;
+    transition: all .2s; }
+    .search__input:focus {
+      width: 100%;
+      outline: none; }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-ligh-4); }
+  .search__input + button {
+    background-color: var(--color-grey-ligh-2); }
+  .search__button {
+    border: none;
+    background-color: var(--color-grey-ligh-2);
+    cursor: pointer; }
+    .search__button:focus {
+      outline: none; }
+    .search__button:active {
+      transform: translateY(2px); }
+  .search__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-3); }
+
+.user-nav {
+  align-self: stretch;
+  display: flex;
+  align-items: center; }
+  .user-nav > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%; }
+  .user-nav > *:hover {
+    background-color: var(--color-grey-ligh-2); }
+  .user-nav__icon-box {
+    display: flex;
+    align-items: center; }
+  .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem; }
+  .user-nav__user {
+    display: flex;
+    align-items: center; }
+  .user-nav__user-photo {
+    height: 3.25rem;
+    border-radius: 50%; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -44,7 +107,15 @@ body {
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2); }
+  border-bottom: var(--color-grey-light-2);
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__logo {
+    height: 4rem;
+    width: 6rem;
+    margin-left: 2.5rem; }
 
 .content {
   display: flex; }

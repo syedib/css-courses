@@ -1,0 +1,113 @@
+/////////////////////////////////////////
+////////LOGO
+
+.logo{
+    height: 3.25rem;
+}
+
+/////////////////////////////////////////
+///////SEARCH
+
+.search{
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input{
+        font-family: inherit;
+        font-size: inherit;
+        width: 90%;
+        padding: .7rem 2rem;
+        background-color: var(--color-grey-ligh-2);
+        border-radius: 100px;
+        border: none;
+        height: 3rem;
+        margin-right: -3.25rem;
+
+        transition: all .2s;
+
+        &:focus{
+            width: 100%;
+            outline: none;
+        }
+
+        &::-webkit-input-placeholder{
+            font-weight: 100;
+            color: var(--color-grey-ligh-4);
+        }
+        
+    }
+
+    &__input + button{
+        background-color: var(--color-grey-ligh-2);
+    }
+
+    &__button{
+        border: none;
+        background-color: var(--color-grey-ligh-2);
+        cursor: pointer;
+        &:focus{
+            outline: none;
+        }
+
+        &:active{
+            transform: translateY(2px);
+        }
+    }
+
+    &__icon{
+        height: 2rem;
+        width: 2rem;
+        fill: var(--color-grey-dark-3);
+    }
+}
+
+
+//////////////////////////////////////////
+/////// USER NAVIGATION
+
+.user-nav{
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+
+    & > *{
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+
+    & > *:hover{
+        background-color: var(--color-grey-ligh-2);
+    }
+
+    &__icon-box{
+    }
+
+    &__icon{
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    &__notification{
+
+    }
+
+    &__user{
+       
+    }
+
+    &__user-photo{
+        height: 3.25rem;
+        border-radius: 50%;
+    }
+
+    &__user-name{
+
+    }
+}
+

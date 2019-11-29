@@ -10,6 +10,15 @@
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--color-grey-light-2);
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        height: 4rem;
+        width: 6rem;
+        margin-left: 2.5rem;
+    }
 }
 
 .content{
