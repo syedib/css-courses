@@ -156,6 +156,77 @@ body {
   color: var(--color-grey-ligh-4);
   padding: 1rem; }
 
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex;
+  border-bottom: 1px solid var(--color-grey-light-2);
+  align-items: center; }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem; }
+  .overview__star-icon, .overview__location-icon {
+    width: 1.75rem;
+    height: 1.75rem; }
+  .overview__location-icon {
+    margin-right: .5rem; }
+  .overview__stars {
+    margin-right: auto;
+    display: flex; }
+  .overview__location {
+    font-size: 1.2rem;
+    display: flex;
+    vertical-align: middle; }
+  .overview__rating {
+    background-color: var(--color-primary);
+    color: white;
+    align-self: stretch;
+    padding: 0 2rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .overview__rating_average {
+    font-size: 2.25rem;
+    font-weight: 300; }
+  .overview__rating_vote_counts {
+    font-size: 1rem;
+    text-transform: uppercase; }
+
+.btn-inline {
+  border: none;
+  font-size: inherit;
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  color: var(--color-primary);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .2s;
+  padding-bottom: 2px; }
+  .btn-inline:hover {
+    color: var(--color-grey-dark-1); }
+  .btn-inline:focus {
+    outline: none;
+    animation: pulstate 1s infinite; }
+
+@keyframes pulstate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -166,7 +237,7 @@ body {
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: 1px solid var(--color-grey-light-2);
   font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
@@ -188,5 +259,4 @@ body {
 
 .hotel-view {
   height: 50rem;
-  background-color: orangered;
   flex: 1; }

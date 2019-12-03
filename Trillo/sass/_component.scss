@@ -196,3 +196,115 @@
     color: var(--color-grey-ligh-4);
     padding: 1rem;
 }
+
+//////////////////////////////////////////
+/////// GALLERY
+
+.gallery{
+    display: flex;
+    &__photo{
+        width: 100%;
+        display: block;
+    }
+}
+
+//////////////////////////////////////////
+/////// OVERVIEW
+
+.overview{
+    display: flex;
+    border-bottom: 1px solid var(--color-grey-light-2);
+    align-items: center;
+    &__heading{
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 1.5rem 3rem;
+    }
+
+    &__star-icon, 
+    &__location-icon{
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    &__location-icon{
+        margin-right: .5rem;
+    }
+
+    &__stars{
+        margin-right: auto;
+        display: flex;
+    }
+
+    &__location{
+        font-size: 1.2rem;
+        display: flex;
+        vertical-align: middle;
+    }
+
+    &__rating{
+        background-color: var(--color-primary);
+        color: white;
+        align-self: stretch;
+        padding: 0 2rem;
+        margin-left: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__rating_average{
+        font-size: 2.25rem;
+        font-weight: 300;
+    }
+
+    &__rating_vote_counts{
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+}
+
+//////////////////////////////////////////
+/////// BTN INLINE
+
+.btn-inline{
+    border: none;
+    font-size: inherit;
+    border-bottom: 2px solid currentColor;
+    display: inline-block;
+    color: var(--color-primary);
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+    padding-bottom: 2px;
+
+
+    &:hover{
+        color: var(--color-grey-dark-1);
+    }
+
+    &:focus{
+        outline: none;
+        animation: pulstate 1s infinite;
+    }
+}
+
+@keyframes pulstate{
+    0%{
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50%{
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0,0,0, .2s);
+    }
+
+    100%{
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
